@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "MeetBurn",
+    "slug": "meetburn",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/meetburn-icon.png",
+    "scheme": "meetburn",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "icon": "./assets/images/meetburn-icon.png",
+      "bundleIdentifier": "com.meetburn.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/meetburn-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.meetburn.app",
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/meetburn-icon.png"
+    },
+    "plugins": [
+      ["expo-router", { "sitemap": false }],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/meetburn-icon.png",
+          "imageWidth": 300,
+          "resizeMode": "contain",
+          "backgroundColor": "#000000"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
